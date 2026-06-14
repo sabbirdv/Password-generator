@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img{
+            width: 200px;
+        }
+    </style>
+
+    <title>Sabbir</title>
+</head>
+<body class="flex flex-col justify-center items-center gap-10 pt-20">
+  
+
+<div action="" class="flex flex-col justify-center items-center gap-5 p-5 rounded-xl bg-linear-0 from-blue-200 to-red-200">
+    <h1 class="text-[40px] text-center font-semibold uppercase" id="myH1">Password generator</h1>
+    <input type="number" id="userInput" class="border-purple-400 border-2 bg-purple-100 rounded-md p-3 w-30 text-center text-[30px] focus:outline-0">
+
+    <button type="button" onclick="generate()" class="py-3 px-5 bg-green-600 rounded-md font-medium text-lg text-white">Generate</button>
+
+    <p class="border-green-400 border-2 bg-green-100 rounded-md p-3 mt-3  min-w-80 text-[30px]">Generated password: <span  id="userResult"></span> </p>
+    <button type="button" onclick="copy()" class="py-3 px-5 bg-green-600 rounded-md font-medium text-lg text-white">Copy</button>
+
+</div>
+
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
